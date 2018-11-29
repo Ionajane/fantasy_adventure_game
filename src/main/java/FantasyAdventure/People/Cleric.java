@@ -1,5 +1,4 @@
 package FantasyAdventure.People;
-
 import FantasyAdventure.Enums.Healer;
 
 public class Cleric {
@@ -8,6 +7,10 @@ public class Cleric {
 
     public Cleric(Healer healer) {
         this.healer = healer;
+    }
+
+    public Healer getHealer() {
+        return healer;
     }
 
     //can heal
