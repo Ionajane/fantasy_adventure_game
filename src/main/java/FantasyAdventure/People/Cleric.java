@@ -18,11 +18,11 @@ public class Cleric  {
 
     public int healPlayer(Player player) {
         if (player.healthPoints < 100);
-        return player.healthPoints + // healer enum {
+        return player.healthPoints; // + healer enum {
 //            else return 0/null;
 //        }
     }
-    
+
     // how do I add a enum to an if statement dynamically
     // so that the healthPoints of player will increase with the potion for example?
 
