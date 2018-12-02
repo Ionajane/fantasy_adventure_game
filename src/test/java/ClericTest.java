@@ -9,11 +9,17 @@ public class ClericTest {
 
     Cleric cleric;
 
-//    @Before
-//    cleric = new Cleric(Healer.WILDBERRY);
-//
-//    @Test
-//    public void canGetHealer() {
-//        assertEquals(Healer.WILDBERRY, cleric.getHealer());
-//    }
+    @Before
+    cleric = new Cleric(Healer.WILDBERRY);
+
+   @Test
+    public void canGetHealer() {
+       assertEquals(Healer.WILDBERRY, cleric.getHealer());
+    }
+
+    @Test
+    public void canHealPlayer() {
+       assertEquals(30, cleric.healPlayer());
+    }
+    // player starts with 0 and is given BRAVE(30)
 }

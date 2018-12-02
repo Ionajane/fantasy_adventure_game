@@ -1,8 +1,7 @@
 package FantasyAdventure.People;
-
 import FantasyAdventure.Enums.Weapon;
 
-public abstract class Fighter extends Player{
+public class Fighter extends Player{
 
     protected String fight;
     protected Weapon weapon;

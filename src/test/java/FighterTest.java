@@ -1,47 +1,48 @@
 import FantasyAdventure.Enums.Weapon;
+import FantasyAdventure.People.Fighter;
 import FantasyAdventure.People.Fighters.Barbarian;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class BarbarionTest {
+public class FighterTest {
 
-    Barbarian barbarian;
+    Fighter fighter;
 
     @Before
     public void before() {
-        barbarian = new Barbarian(0, 0, "Let's fight!", Weapon.AXE);
+        fighter = new Fighter(0, 0, "Let's fight!", Weapon.AXE);
     }
 
     @Test
     public void canGetHealthPoints(){
-        assertEquals(0, barbarian.getHealthPoints());
+        assertEquals(0, fighter.getHealthPoints());
     }
 
     @Test
     public void canGetTreasurePoints() {
-        assertEquals(0, barbarian.getTreasurePoints());
+        assertEquals(0, fighter.getTreasurePoints());
     }
 
     @Test
     public void canGetWeapon() {
-        assertEquals(Weapon.AXE, barbarian.getWeapon());
+        assertEquals(Weapon.AXE, fighter.getWeapon());
     }
 
     @Test
     public void canFight() {
-        assertEquals("Let's fight!", barbarian.getFight());
+        assertEquals("Let's fight!", fighter.getFight());
     }
 
     @Test
     public void canAddHealthPoints() {
-        assertEquals(1, barbarian.addHealthPoints());
+        assertEquals(1, fighter.addHealthPoints());
     }
 
     @Test
     public void canAddTreasurePoints() {
-        assertEquals(1, barbarian.addTreasurePoints());
+        assertEquals(1, fighter.addTreasurePoints());
     }
 
 }
