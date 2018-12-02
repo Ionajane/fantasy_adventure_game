@@ -1,7 +1,6 @@
 import FantasyAdventure.Enums.Defender;
 import FantasyAdventure.Enums.SpellCasting;
 import FantasyAdventure.People.SpellCasters.Witch;
-import FantasyAdventure.People.SpellCaster;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,12 +12,12 @@ public class WitchTest {
 
     @Before
     public void before() {
-        witch = new Witch(100, 0, "Riddikulus!", );
+        witch = new Witch(0, 0, SpellCasting.FIREBALL, Defender.PHENOIX);
     }
 
     @Test
     public void canGetHealthPoints(){
-        assertEquals(100, witch.getHealthPoints());
+        assertEquals(0, witch.getHealthPoints());
     }
 
     @Test

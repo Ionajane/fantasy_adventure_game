@@ -18,5 +18,13 @@ public abstract class Player {
         return treasurePoints;
     }
 
+    public int addHealthPoints() {
+        return healthPoints + 1;
+    }
+
+    public int addTreasurePoints() {
+        return treasurePoints + 1;
+    }
+
     //checks for enemy in room
 }

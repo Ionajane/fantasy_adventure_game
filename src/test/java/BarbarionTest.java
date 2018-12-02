@@ -11,12 +11,12 @@ public class BarbarionTest {
 
     @Before
     public void before() {
-        barbarian = new Barbarian(100, 0, "Let's fight!", Weapon.AXE);
+        barbarian = new Barbarian(0, 0, "Let's fight!", Weapon.AXE);
     }
 
     @Test
     public void canGetHealthPoints(){
-        assertEquals(100, barbarian.getHealthPoints());
+        assertEquals(0, barbarian.getHealthPoints());
     }
 
     @Test
@@ -31,12 +31,17 @@ public class BarbarionTest {
 
     @Test
     public void canFight() {
-    assertEquals("Let's fight!", barbarian.getFight());
+        assertEquals("Let's fight!", barbarian.getFight());
     }
 
-//    @Test
-//    public void canIncreaseHealthPoints() {
-//        assertEquals();
-//    }
+    @Test
+    public void canAddHealthPoints() {
+        assertEquals(1, barbarian.addHealthPoints());
+    }
+
+    @Test
+    public void canAddTreasurePoints() {
+        assertEquals(1, barbarian.addTreasurePoints());
+    }
 
 }
